@@ -1,0 +1,11 @@
+@{
+   Layout = "_Layout";
+  @* var product = ViewData["product"] as ProductModel; *@
+  var product = ViewBag.product as ProductModel;
+}
+
+<div>
+   @product.Name - @product.Price
+</div>
+
+@this.Path

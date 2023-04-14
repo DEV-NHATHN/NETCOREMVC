@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sZxzjwARxCRCCwGLheLgoLZNl916BehtCtQ65kz/TsE=",
+  "Hash": "iJtr/lHcAWHKi6E+TIMviYDrjuzoeH/vkLA41Q2/RTE=",
   "Source": "NETCOREMVC",
   "BasePath": "_content/NETCOREMVC",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "F:\\NETCOREMVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\NETCOREMVC.bundle.scp.css"
+    },
+    {
+      "Identity": "F:\\NETCOREMVC\\wwwroot\\bird.jfif",
+      "SourceId": "NETCOREMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\NETCOREMVC\\wwwroot\\",
+      "BasePath": "_content/NETCOREMVC",
+      "RelativePath": "bird.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\bird.jfif"
     },
     {
       "Identity": "F:\\NETCOREMVC\\wwwroot\\css\\site.css",

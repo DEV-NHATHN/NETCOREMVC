@@ -16,8 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\NETCOREMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/NETCOREMVC/Custom/View/First/hello.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3VzdG9tXFZpZXdcRmlyc3RcaGVsbG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/NETCOREMVC/Custom/View/hello.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Q3VzdG9tXFZpZXdcaGVsbG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/NETCOREMVC/Pages/Razor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmF6b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/NETCOREMVC/Views/First/ViewProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlyc3RcVmlld1Byb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/NETCOREMVC/Views/Home/Index.cshtml]

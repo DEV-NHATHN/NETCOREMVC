@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\NETCOREMVC.bundle.scp.css"
     },
     {
+      "Id": "F:\\NETCOREMVC\\wwwroot\\bird.jfif",
+      "PackagePath": "staticwebassets\\bird.jfif"
+    },
+    {
       "Id": "F:\\NETCOREMVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

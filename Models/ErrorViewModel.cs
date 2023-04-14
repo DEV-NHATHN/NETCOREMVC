@@ -1,4 +1,4 @@
-namespace NETCOREMVC.Models;
+namespace App.Models;
 
 public class ErrorViewModel
 {

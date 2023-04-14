@@ -18645,6 +18645,11 @@
   "RootNamespace": "NETCOREMVC",
   "Documents": [
     {
+      "FilePath": "f:\\NETCOREMVC\\Custom\\View\\hello.cshtml",
+      "TargetPath": "Custom\\View\\hello.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "f:\\NETCOREMVC\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -18670,8 +18675,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "f:\\NETCOREMVC\\Views\\First\\ViewProduct.cshtml",
+      "TargetPath": "Views\\First\\ViewProduct.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "f:\\NETCOREMVC\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "f:\\NETCOREMVC\\Custom\\View\\First\\hello.cshtml",
+      "TargetPath": "Custom\\View\\First\\hello.cshtml",
       "FileKind": "mvc"
     },
     {
