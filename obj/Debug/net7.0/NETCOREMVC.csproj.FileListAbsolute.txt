@@ -60,3 +60,34 @@ F:\NETCOREMVC\obj\Debug\net7.0\refint\NETCOREMVC.dll
 F:\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.pdb
 F:\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.genruntimeconfig.cache
 F:\NETCOREMVC\obj\Debug\net7.0\ref\NETCOREMVC.dll
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\bin\Debug\net7.0\appsettings.json
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\bin\Debug\net7.0\NETCOREMVC.staticwebassets.runtime.json
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\bin\Debug\net7.0\NETCOREMVC.exe
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\bin\Debug\net7.0\NETCOREMVC.deps.json
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\bin\Debug\net7.0\NETCOREMVC.runtimeconfig.json
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\bin\Debug\net7.0\NETCOREMVC.dll
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\bin\Debug\net7.0\NETCOREMVC.pdb
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.AssemblyInfo.cs
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.RazorAssemblyInfo.cache
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.RazorAssemblyInfo.cs
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\staticwebassets\msbuild.NETCOREMVC.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\staticwebassets\msbuild.build.NETCOREMVC.props
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.NETCOREMVC.props
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.NETCOREMVC.props
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\scopedcss\bundle\NETCOREMVC.styles.css
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\scopedcss\projectbundle\NETCOREMVC.bundle.scp.css
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.dll
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\refint\NETCOREMVC.dll
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.pdb
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.genruntimeconfig.cache
+C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\obj\Debug\net7.0\ref\NETCOREMVC.dll

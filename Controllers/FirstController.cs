@@ -66,6 +66,7 @@ This is another paragraph.
          return View("hello", username);
       }
 
+      [AcceptVerbs("POST", "GET")]
       public IActionResult ViewProduct(int? id)
       {
          if (id == null)

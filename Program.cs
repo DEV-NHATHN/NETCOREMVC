@@ -1,4 +1,5 @@
 using App.Services;
+using App.Extensions;
 using Microsoft.AspNetCore.Mvc.Razor;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,7 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
    options.ViewLocationFormats.Add("/Custom/View/{1}/{0}" + RazorViewEngine.ViewExtension);
 });
 builder.Services.AddSingleton(typeof(ProductService));
+builder.Services.AddSingleton<PlanetService>();
 
 var app = builder.Build();
 
@@ -25,7 +27,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.AddStatusCodePage();
 app.UseRouting();
 
 app.UseAuthentication();
@@ -36,4 +38,17 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapRazorPages();
+
+app.UseEndpoints(endpoints =>
+{
+   endpoints.MapControllerRoute(
+       name: "first",
+              pattern: "{url:regex(^view.*product$)}/{id:range(1,5)}",
+              defaults: new { controller = "First", action = "ViewProduct" });
+   endpoints.MapControllerRoute(
+              name: "default",
+              pattern: "{controller=Home}/{action=Index}/{id?}");
+   endpoints.MapRazorPages();
+}
+);
 app.Run();
