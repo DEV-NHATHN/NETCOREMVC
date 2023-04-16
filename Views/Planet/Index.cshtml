@@ -1,0 +1,13 @@
+@inject App.Services.PlanetService planetService
+<h1>Cac hanh tinh</h1>
+
+<div class="list-group">
+    @foreach (var planet in planetService.GetPlanets())
+    {
+        <a class= "list-group-item list-group-item-action" asp-action= "@planet.Name">@planet.Name</a>
+    }
+</div>
+
+<p>@Url.RouteUrl("mercury1")</p>
+
+<p>@Url.RouteUrl("mercury2")</p>

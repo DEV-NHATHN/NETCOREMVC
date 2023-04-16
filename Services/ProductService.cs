@@ -12,5 +12,10 @@ namespace App.Services
          Add(new ProductModel { Id = 4, Name = "iMac", Price = 1999.99m });
          Add(new ProductModel { Id = 5, Name = "MacBook", Price = 1499.99m });
       }
+
+      public List<ProductModel> GetProducts()
+      {
+         return this;
+      }
    }
 }
