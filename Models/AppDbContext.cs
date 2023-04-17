@@ -1,10 +1,11 @@
+using App.Models.Contacts;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace App.Models
 {
    // App.Models.AppDbContext
-   public class AppDbContext : DbContext
+   public class AppDbContext : IdentityDbContext<AppUser>
    {
       public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
       {
@@ -22,14 +23,16 @@ namespace App.Models
       {
          base.OnModelCreating(modelBuilder);
 
-         // foreach (var entityType in modelBuilder.Model.GetEntityTypes())
-         // {
-         //    var tableName = entityType.GetTableName();
-         //    if (tableName.StartsWith("AspNet"))
-         //    {
-         //       entityType.SetTableName(tableName.Substring(6));
-         //    }
-         // }
+         foreach (var entityType in modelBuilder.Model.GetEntityTypes())
+         {
+            var tableName = entityType.GetTableName();
+            if (tableName.StartsWith("AspNet"))
+            {
+               entityType.SetTableName(tableName.Substring(6));
+            }
+         }
       }
+
+      public DbSet<Contact> Contacts { get; set; }
    }
 }

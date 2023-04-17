@@ -13,6 +13,7 @@ var canConnect = db.Database.CanConnect();
 db.Database.GetPendingMigrations();
 }
 
+<partial name="_AlertMessage" />
 <h1>Database Manage</h1>
 
 <p>@dbName</p>
@@ -29,6 +30,14 @@ db.Database.GetPendingMigrations();
 @foreach (var migration in db.Database.GetPendingMigrations())
 {
     <p>@migration</p>
+}
+
+@if (db.Database.GetPendingMigrations().Any())
+{
+  <form method="post">
+      <button class = "btn btn-success" asp-action="Migrate">Tạo Db (Cập nhật migration)</button>
+  </form>
+  
 }
 
 <p>Can Connect: @canConnect</p>

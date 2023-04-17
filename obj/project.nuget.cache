@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+wlNQfASuBWXERJlH2+prq2nZ67GHwfOSKgo+N3L4V+9oTGccWt2qmnRIB4mdk2WPC3mnCHWVhsviSW6aB5fVg==",
+  "dgSpecHash": "vpFUZqDPZL6I7Bj1mOJF3Wc2On7pkscjNu0yQCn/fEM2Wmfof4S6kgUSmRqsXOw7cnT1w6dHEOKZ71rUU5tvzQ==",
   "success": true,
   "projectFilePath": "F:\\NETCOREMVC\\NETCOREMVC.csproj",
   "expectedPackageFiles": [
@@ -70,6 +70,7 @@
     "C:\\Users\\NhatNH2\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.5\\microsoft.entityframeworkcore.design.7.0.5.nupkg.sha512",
     "C:\\Users\\NhatNH2\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.5\\microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
     "C:\\Users\\NhatNH2\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.5\\microsoft.entityframeworkcore.sqlserver.7.0.5.nupkg.sha512",
+    "C:\\Users\\NhatNH2\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.5\\microsoft.entityframeworkcore.tools.7.0.5.nupkg.sha512",
     "C:\\Users\\NhatNH2\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\NhatNH2\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "C:\\Users\\NhatNH2\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
