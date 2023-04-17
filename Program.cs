@@ -1,10 +1,16 @@
 using App.Services;
 using App.Extensions;
 using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.EntityFrameworkCore;
+using App.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<AppDbContext>(options =>
+{
+   options.UseSqlServer(builder.Configuration.GetConnectionString("AppMvcConnectionString"));
+});
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddTransient(typeof(ILogger<>), typeof(Logger<>));
@@ -41,6 +47,10 @@ app.MapRazorPages();
 
 app.UseEndpoints(endpoints =>
 {
+   endpoints.MapAreaControllerRoute(
+       name: "product",
+       areaName: "ProductManage",
+       pattern: "/{controller}/{action=Index}/{id?}");
    endpoints.MapControllerRoute(
        name: "first",
               pattern: "{url:regex(^view.*product$)}/{id:range(1,5)}",
@@ -49,6 +59,5 @@ app.UseEndpoints(endpoints =>
               name: "default",
               pattern: "{controller=Home}/{action=Index}/{id?}");
    endpoints.MapRazorPages();
-}
-);
+});
 app.Run();

@@ -1,0 +1,47 @@
+@using Microsoft.EntityFrameworkCore
+@using System.Data
+@using App.Models
+
+@inject AppDbContext db
+
+@{
+ViewData["Title"] = "Database Manage";
+var connect = db.Database.GetDbConnection();
+var dbName = connect.Database;
+var canConnect = db.Database.CanConnect();
+
+db.Database.GetPendingMigrations();
+}
+
+<h1>Database Manage</h1>
+
+<p>@dbName</p>
+<p>@connect.DataSource</p>
+<p>@connect.State</p>
+
+<p>Migrations</p>
+@foreach (var migration in db.Database.GetAppliedMigrations())
+{
+    <p>@migration</p>
+}
+
+<p>Pending Migrations</p>
+@foreach (var migration in db.Database.GetPendingMigrations())
+{
+    <p>@migration</p>
+}
+
+<p>Can Connect: @canConnect</p>
+
+@if(canConnect){
+   <h2>Tables</h2>
+
+   await db.Database.OpenConnectionAsync();
+   var tables = db.Database.GetDbConnection().GetSchema("Tables");
+  <ul>
+   @foreach (System.Data.DataRow row in tables.Rows)
+   {
+       <li>@row["TABLE_NAME"]</li>
+   }
+  </ul>
+}

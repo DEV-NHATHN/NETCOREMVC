@@ -18,4 +18,24 @@
 - Tạo cấu trúc thư mục
 ```
 dotnet aspnet-codegenerator area Product
-```
+```  
+
+_ViewStart và _ViewImports
+
+# Url.Action()
+# Url.ActionLink()
+# Url.RouteUrl()
+# Url.Link()
+
+asp-area
+asp-controller
+asp-action
+asp-route-[paramName]
+asp-route
+
+"Microsoft.EntityFrameworkCore.Query": "Information",
+"Microsoft.EntityFrameworkCore.Database.Command": "Information"
+
+
+
+

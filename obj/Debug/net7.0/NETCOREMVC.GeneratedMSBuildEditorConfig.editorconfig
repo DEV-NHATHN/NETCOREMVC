@@ -9,65 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NETCOREMVC
 build_property.RootNamespace = NETCOREMVC
-build_property.ProjectDir = C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC\
+build_property.ProjectDir = F:\NETCOREMVC\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\Documents\React Projects\C#\NETCOREMVC
+build_property.MSBuildProjectDirectory = F:\NETCOREMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Custom/View/First/hello.cshtml]
+[F:/NETCOREMVC/Areas/Database/Views/DbManage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGF0YWJhc2VcVmlld3NcRGJNYW5hZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/NETCOREMVC/Areas/ProductManage/Views/Product/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZHVjdE1hbmFnZVxWaWV3c1xQcm9kdWN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/NETCOREMVC/Custom/View/First/hello.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Q3VzdG9tXFZpZXdcRmlyc3RcaGVsbG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Custom/View/hello.cshtml]
+[F:/NETCOREMVC/Custom/View/hello.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Q3VzdG9tXFZpZXdcaGVsbG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Pages/Razor.cshtml]
+[F:/NETCOREMVC/Pages/Razor.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmF6b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Views/First/ViewProduct.cshtml]
+[F:/NETCOREMVC/Views/First/ViewProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlyc3RcVmlld1Byb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Views/Home/Index.cshtml]
+[F:/NETCOREMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Views/Home/Privacy.cshtml]
+[F:/NETCOREMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Views/Planet/Detail.cshtml]
+[F:/NETCOREMVC/Views/Planet/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmV0XERldGFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Views/Planet/Index.cshtml]
+[F:/NETCOREMVC/Views/Planet/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmV0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Views/Product/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Views/Shared/Error.cshtml]
+[F:/NETCOREMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[F:/NETCOREMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Views/_ViewImports.cshtml]
+[F:/NETCOREMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Views/_ViewStart.cshtml]
+[F:/NETCOREMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Documents/React Projects/C\#/NETCOREMVC/Views/Shared/_Layout.cshtml]
+[F:/NETCOREMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-zfsjl9aihy
