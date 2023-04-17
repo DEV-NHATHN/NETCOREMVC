@@ -3,8 +3,8 @@ using App.Extensions;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using App.Models;
+using App.Data;
 using Microsoft.AspNetCore.Identity;
-
 
 var builder = WebApplication.CreateBuilder(args);
 var Configuration = builder.Configuration;
@@ -15,6 +15,12 @@ builder.Services.AddDbContext<AppDbContext>(options =>
    options.UseSqlServer(builder.Configuration.GetConnectionString("AppMvcConnectionString"));
 });
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddOptions();
+var mailsetting = Configuration.GetSection("MailSettings");
+builder.Services.Configure<MailSettings>(mailsetting);
+builder.Services.AddSingleton<IEmailSender, SendMailService>();
+
 builder.Services.AddRazorPages();
 builder.Services.AddTransient(typeof(ILogger<>), typeof(Logger<>));
 builder.Services.Configure<RazorViewEngineOptions>(options =>
@@ -23,6 +29,14 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
 });
 builder.Services.AddSingleton(typeof(ProductService));
 builder.Services.AddSingleton<PlanetService>();
+builder.Services.AddAuthorization(options =>
+{
+   options.AddPolicy("ViewManageMenu", builder =>
+   {
+      builder.RequireAuthenticatedUser();
+      builder.RequireClaim(RoleName.Administrator);
+   });
+});
 
 // Dang ky Identity
 builder.Services.AddIdentity<AppUser, IdentityRole>()
@@ -85,6 +99,7 @@ builder.Services.AddAuthentication()
         // .AddMicrosoftAccount()
         ;
 
+builder.Services.AddSingleton<IdentityErrorDescriber, AppIdentityErrorDescriber>();
 
 var app = builder.Build();
 
