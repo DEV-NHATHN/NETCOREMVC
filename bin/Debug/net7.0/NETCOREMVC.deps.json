@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "NETCOREMVC/1.0.0": {
         "dependencies": {
+          "Bogus": "34.0.2",
           "MailKit": "4.0.0",
           "Microsoft.AspNetCore.Authentication": "2.2.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "2.2.0",
@@ -32,7 +33,8 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.6",
           "MimeKit": "4.0.0",
           "MySql.Data.EntityFramework": "8.0.32",
-          "System.Data.SqlClient": "4.8.5"
+          "System.Data.SqlClient": "4.8.5",
+          "elFinder.NetCore": "1.3.6"
         },
         "runtime": {
           "NETCOREMVC.dll": {}
@@ -72,11 +74,31 @@
           }
         }
       },
+      "Bogus/34.0.2": {
+        "runtime": {
+          "lib/net6.0/Bogus.dll": {
+            "assemblyVersion": "34.0.2.0",
+            "fileVersion": "34.0.2.0"
+          }
+        }
+      },
       "BouncyCastle.Cryptography/2.1.1": {
         "runtime": {
           "lib/net6.0/BouncyCastle.Cryptography.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.1.1.34079"
+          }
+        }
+      },
+      "elFinder.NetCore/1.3.6": {
+        "dependencies": {
+          "System.Drawing.Common": "6.0.0",
+          "System.Text.Json": "7.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/elFinder.NetCore.dll": {
+            "assemblyVersion": "1.3.6.0",
+            "fileVersion": "1.3.6.0"
           }
         }
       },
@@ -2856,12 +2878,26 @@
       "path": "azure.identity/1.6.0",
       "hashPath": "azure.identity.1.6.0.nupkg.sha512"
     },
+    "Bogus/34.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2KQAuMn3fLAQ2r6jeiffZnpv0bi3GCW3iRB2v1KeHIEBu8MNTh9dBlLTZwGvM0pr+9doKkU8L5JgCURmTmT88A==",
+      "path": "bogus/34.0.2",
+      "hashPath": "bogus.34.0.2.nupkg.sha512"
+    },
     "BouncyCastle.Cryptography/2.1.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-NNQaa4eyf5YjSdLKUWGPzq5HXZQc3yGybfIOkR6UY1C/rRFWdo0UhSzBqqnxwGnq3ie4vkN0JlzhhANjfTIJIQ==",
       "path": "bouncycastle.cryptography/2.1.1",
       "hashPath": "bouncycastle.cryptography.2.1.1.nupkg.sha512"
+    },
+    "elFinder.NetCore/1.3.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IRonnEAryYn8o7g8cwcHWFFDk652KOVC47Mn23HvOPxCyYbdJS9gQeE3UY4ZeQGe0yIqno/WWWw/OfMeL2nKSA==",
+      "path": "elfinder.netcore/1.3.6",
+      "hashPath": "elfinder.netcore.1.3.6.nupkg.sha512"
     },
     "EntityFramework/6.4.4": {
       "type": "package",

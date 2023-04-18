@@ -2,14 +2,12 @@
 @inject IAuthorizationService authorizationService
 
 @{
-    var result = await authorizationService.AuthorizeAsync(this.User, "ViewManageMenu");
+    var hasViewManageMenuPermission = (await authorizationService.AuthorizeAsync(User, "ViewManageMenu")).Succeeded;
 }
 
-@if (result.Succeeded)
+@if (hasViewManageMenuPermission)
 {
-    <a class="nav-link text-light" asp-action="Index" asp-controller="AdminCP" asp-area="AdminCP">
+    <a class="nav-link" asp-action="Index" asp-controller="AdminCP" asp-area="AdminCP">
         <i class="fas fa-cog"></i>  Quản trị
     </a>
 }
-
-<p>@result.Succeeded</p>

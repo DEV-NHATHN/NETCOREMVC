@@ -589,3 +589,5 @@ F:\NETCOREMVC\obj\Debug\net7.0\refint\NETCOREMVC.dll
 F:\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.pdb
 F:\NETCOREMVC\obj\Debug\net7.0\NETCOREMVC.genruntimeconfig.cache
 F:\NETCOREMVC\obj\Debug\net7.0\ref\NETCOREMVC.dll
+F:\NETCOREMVC\bin\Debug\net7.0\Bogus.dll
+F:\NETCOREMVC\bin\Debug\net7.0\elFinder.NetCore.dll

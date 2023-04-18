@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "vpFUZqDPZL6I7Bj1mOJF3Wc2On7pkscjNu0yQCn/fEM2Wmfof4S6kgUSmRqsXOw7cnT1w6dHEOKZ71rUU5tvzQ==",
+  "dgSpecHash": "1JZAg/Ej+7P2r88jXt0uA9+bTCuUDJ12c7yZGgSpbXxgVZ1iGTu6z7huGObR9nxDHpJ+Iok9EWkUPvPkZntISA==",
   "success": true,
   "projectFilePath": "F:\\NETCOREMVC\\NETCOREMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NhatNH2\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\NhatNH2\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\NhatNH2\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
     "C:\\Users\\NhatNH2\\.nuget\\packages\\bouncycastle.cryptography\\2.1.1\\bouncycastle.cryptography.2.1.1.nupkg.sha512",
+    "C:\\Users\\NhatNH2\\.nuget\\packages\\elfinder.netcore\\1.3.6\\elfinder.netcore.1.3.6.nupkg.sha512",
     "C:\\Users\\NhatNH2\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\NhatNH2\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\NhatNH2\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
