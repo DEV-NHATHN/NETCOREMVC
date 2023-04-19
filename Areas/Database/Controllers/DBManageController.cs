@@ -7,12 +7,15 @@ using App.Data;
 using App.Models;
 using App.Models.Blogs;
 using App.Models.Product;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 
 namespace App.Areas.Database.Controllers
 {
+   [Area("Database")]
+   [Route("/database-manage/[action]")]
    public class DBManageController : Controller
    {
       public DBManageController(AppDbContext dbContext, UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager, SignInManager<AppUser> signInManager)
@@ -35,6 +38,26 @@ namespace App.Areas.Database.Controllers
       public IActionResult Index()
       {
          return View();
+      }
+
+      [HttpGet]
+      [Authorize(Roles = RoleName.Administrator)]
+      public IActionResult DeleteDb()
+      {
+         return View();
+      }
+
+      [HttpPost]
+      [Authorize(Roles = RoleName.Administrator)]
+      public async Task<IActionResult> DeleteDbAsync()
+      {
+
+
+         var success = await _dbContext.Database.EnsureDeletedAsync();
+
+         StatusMessage = success ? "Xóa Database thành công" : "Không xóa được Db";
+
+         return RedirectToAction(nameof(Index));
       }
 
       [TempData]
@@ -97,7 +120,7 @@ namespace App.Areas.Database.Controllers
          SeedPostCategory();
          SeedProductCategory();
          StatusMessage = "Vừa seed Database";
-         return RedirectToAction("Index", "Home");
+         return RedirectToAction("Index");
 
       }
 

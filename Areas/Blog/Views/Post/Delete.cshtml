@@ -1,6 +1,6 @@
 @model App.Models.Blogs.Post
-@* @using App.Menu
-@inject AdminSidebarService _AdminSidebarService *@
+@using App.Menu
+@inject AdminSidebarService _AdminSidebarService
 @{
     ViewData["Title"] = "Xóa bài viết";
     Layout =  "/Views/Shared/_LayoutAdmin.cshtml";
@@ -16,11 +16,11 @@
     </form>
 </div>
 
-@* @{
+@{
     _AdminSidebarService.SetActive("Post", "Index", "Blog");
 }
 
 @section Sidebar
 {
     @Html.Raw(_AdminSidebarService.renderHtml())
-} *@
+}

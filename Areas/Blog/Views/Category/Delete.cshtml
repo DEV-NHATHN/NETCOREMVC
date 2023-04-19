@@ -1,6 +1,6 @@
 @model App.Models.Blogs.Category
-@* @using App.Menu
-@inject AdminSidebarService _AdminSidebarService *@
+@using App.Menu
+@inject AdminSidebarService _AdminSidebarService
 @{
     ViewData["Title"] = "Xóa chuyên mục";
     Layout =  "/Views/Shared/_LayoutAdmin.cshtml";
@@ -26,11 +26,11 @@
     </form>
 </div>
 
-@* @{
+@{
     _AdminSidebarService.SetActive("Category", "Index", "Blog");
 }
 
 @section Sidebar
 {
     @Html.Raw(_AdminSidebarService.renderHtml())
-} *@
+}

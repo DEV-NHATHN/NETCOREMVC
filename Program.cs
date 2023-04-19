@@ -4,7 +4,10 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using App.Models;
 using App.Data;
+using App.Menu;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 var Configuration = builder.Configuration;
@@ -46,6 +49,9 @@ builder.Services.AddAuthorization(options =>
 });
 
 builder.Services.AddTransient<CartService>();
+
+builder.Services.AddTransient<IActionContextAccessor, ActionContextAccessor>();
+builder.Services.AddTransient<AdminSidebarService>();
 
 // Dang ky Identity
 builder.Services.AddIdentity<AppUser, IdentityRole>()

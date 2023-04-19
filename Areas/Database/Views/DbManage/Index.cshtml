@@ -3,9 +3,12 @@
 @using App.Models
 
 @inject AppDbContext db
+@using App.Menu
+@inject AdminSidebarService _AdminSidebarService
 
 @{
 ViewData["Title"] = "Database Manage";
+Layout = "/Views/Shared/_LayoutAdmin.cshtml"; 
 var connect = db.Database.GetDbConnection();
 var dbName = connect.Database;
 var canConnect = db.Database.CanConnect();
@@ -55,4 +58,14 @@ db.Database.GetPendingMigrations();
   </ul>
 }
 
+<a class = "btn btn-danger" asp-action="DeleteDb">Xóa Db:  @dbName</a>
 <a class="btn btn-danger" asp-action="SeedData">Seed Data</a>
+
+@{
+    _AdminSidebarService.SetActive("DbManage", "Index", "Database");
+}
+
+@section Sidebar
+{
+    @Html.Raw(_AdminSidebarService.renderHtml())
+}

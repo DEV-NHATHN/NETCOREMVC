@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\NETCOREMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/NETCOREMVC/Areas/AdminCP/Views/AdminCP/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5DUFxWaWV3c1xBZG1pbkNQXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/NETCOREMVC/Areas/Blog/Views/Category/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQmxvZ1xWaWV3c1xDYXRlZ29yeVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -102,6 +106,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/NETCOREMVC/Areas/Contact/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29udGFjdFxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/NETCOREMVC/Areas/Database/Views/DbManage/DeleteDb.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGF0YWJhc2VcVmlld3NcRGJNYW5hZ2VcRGVsZXRlRGIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/NETCOREMVC/Areas/Database/Views/DbManage/Index.cshtml]
@@ -202,6 +210,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/NETCOREMVC/Areas/Identity/Views/Account/VerifyCode.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxWZXJpZnlDb2RlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/NETCOREMVC/Areas/Identity/Views/Account/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcVmlld3NcQWNjb3VudFxfTG9naW5MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/NETCOREMVC/Areas/Identity/Views/Manage/AddPhoneNumber.cshtml]
