@@ -1,0 +1,58 @@
+@model List<Post>
+@using App.Components;
+@{
+   List<Category> categories = ViewBag.categories as List<Category>; 
+    Category category = ViewBag.category as Category;
+    ViewData["Title"] = (category!=null) ? category.Title : "Blog";
+}
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="~/">Home</a></li>
+    @if  (category != null)
+    {
+        var li = category.ListParents();
+        foreach (var l in li)
+        {
+            <li class="breadcrumb-item">
+                <a asp-action="Index" asp-route-categoryslug="@l.Slug">@l.Title</a>
+            </li>
+        }
+    } 
+  </ol>
+</nav>
+
+<h1>@ViewData["Title"]</h1>
+
+@if (category != null)
+{
+    <p>
+        @Html.Raw(category.Description)
+    </p>
+} else {
+        <p>Here you can find all the posts I've written.</p>
+}
+
+@foreach (var post in Model)
+{
+    <div>
+        <a asp-controller="ViewPost" asp-action="Detail" asp-route-postslug="@post.Slug">
+            @post.Title
+        </a>
+            <p>@post.Description</p>
+            <strong class="text-danger">
+                @post.PostCategories.FirstOrDefault()?.Category.Title
+            </strong>
+    </div>
+}
+@section Sidebar {
+    @await Component.InvokeAsync("App.Components.CategorySidebar", 
+        new CategorySidebar.CategorySidebarData()
+        {
+            Categories = categories,
+            level = 0,
+            categorySlug = ViewBag.categorySlug
+        })
+}
+
+<partial name="_PagingXTL" model="@ViewBag.pagingModel" />
