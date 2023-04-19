@@ -9,6 +9,13 @@ using Microsoft.AspNetCore.Identity;
 var builder = WebApplication.CreateBuilder(args);
 var Configuration = builder.Configuration;
 
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(cfg =>
+{
+   cfg.Cookie.Name = "AppMvc";
+   cfg.IdleTimeout = new TimeSpan(0, 30, 0);
+});
+
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
@@ -27,7 +34,6 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
 {
    options.ViewLocationFormats.Add("/Custom/View/{1}/{0}" + RazorViewEngine.ViewExtension);
 });
-builder.Services.AddSingleton(typeof(ProductService));
 builder.Services.AddSingleton<PlanetService>();
 builder.Services.AddAuthorization(options =>
 {
@@ -38,6 +44,8 @@ builder.Services.AddAuthorization(options =>
       // builder.RequireClaim("permission", "manage.admin");
    });
 });
+
+builder.Services.AddTransient<CartService>();
 
 // Dang ky Identity
 builder.Services.AddIdentity<AppUser, IdentityRole>()
@@ -114,6 +122,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseSession();
 app.AddStatusCodePage();
 app.UseRouting();
 
