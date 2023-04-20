@@ -1,0 +1,28 @@
+@model IEnumerable<App.Models.Blogs.Category>
+@{
+   ViewData["Title"] = "List";
+}
+
+<partial name="_AlertMessage" />
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+
+            {
+                       <tr>
+                           <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                       </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

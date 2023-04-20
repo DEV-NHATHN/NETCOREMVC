@@ -32,8 +32,8 @@ namespace AppMvc.Net.Areas.Blog.Controllers
                   .Include(c => c.CategoryChildren);
 
          var categories = (await qr.ToListAsync())
-                          .Where(c => c.ParentCategory == null)
-                          .ToList();
+                  .Where(c => c.ParentCategory == null)
+                  .ToList();
 
          return View(categories);
       }
